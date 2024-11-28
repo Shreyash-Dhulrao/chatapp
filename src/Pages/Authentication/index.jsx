@@ -8,11 +8,16 @@ export const Login = () =>{
 
     const handleLogin = (e)=>{
         e.preventDefault()
-        const a = {
-          Username,
-          Password
+        if(Username === "" || Password === ""){
+          alert("username or password missing...!")
         }
-        console.log(a)
+        else{
+          const a = {
+            Username,
+            Password
+          }
+          console.log(a)
+        }
     }
 
   return (
@@ -41,12 +46,17 @@ export const Signup = () =>{
 
     const handleLogin = (e)=>{
         e.preventDefault()
-        const a = {
-          Email,
-          Username,
-          Password
+        if(Username === "" || Password === "" || Email === ""){
+          alert("Something is missing...!")
         }
-        console.log(a)
+        else{
+          const a = {
+            Email,
+            Username,
+            Password
+          }
+          console.log(a)
+        }
     }
 
   return (
