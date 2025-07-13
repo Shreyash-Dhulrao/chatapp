@@ -50,7 +50,7 @@ const leftbar = () => {
   ];
 
   let addedFriends = [
-    { id: 1, profile: null, name: 'Alice', lastActive: new Date(Date.now() - 1000 * 60 * 12),  isFriend:true }, // 12 min ago
+    { id: 1, profile: null, name: 'usern', lastActive: new Date(Date.now() - 1000 * 60 * 12),  isFriend:true }, // 12 min ago
     { id: 3, profile: null, name: 'Charlie', lastActive: new Date(),  isFriend:true }, // active now
     { id: 5, profile: Profile4, name: 'Eva', lastActive: new Date(Date.now() - 1000 * 60 * 60),  isFriend:true }, // 1 hr ago
     { id: 10, profile: null, name: 'Jack', lastActive: new Date(),  isFriend:true }, // active now
@@ -61,8 +61,6 @@ const leftbar = () => {
     { id: 24, profile: null, name: 'Xavier', lastActive: new Date(Date.now() - 1000 * 60 * 2),  isFriend:true }, // 2 min ago
     { id: 26, profile: null, name: 'Zack', lastActive: new Date(Date.now() - 1000 * 60 * 720),  isFriend:true }, // 12 hrs ago
   ];
-
-
 
   const filteredUsers = useMemo(() => {
     const targetList = friendButton === 'Friends' ? addedFriends : allUsers;
