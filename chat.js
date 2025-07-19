@@ -1,6 +1,7 @@
 export const chats = [
-  [
-    {
+  {
+    users: ['user1', 'usern'],
+    messages: [{
       from: "user1",
       to: "usern",
       text: "Hey Alice, how are you?",
@@ -48,59 +49,64 @@ export const chats = [
       time: "14:34",
       isEdited: false,
     },
-  ],
-  [
+  ]},
   {
-    from: "user1",
-    to: "user2",
-    text: "Wanna catch up tomorrow?",
-    date: "2025-07-09",
-    time: "19:21",
-    isEdited: true,
-  },
-  {
-    from: "user2",
-    to: "user1",
-    text: "Sure, let’s do it.",
-    date: "2025-07-09",
-    time: "19:23",
-    isEdited: false,
-  }
-  ],
-  [
-  {
-    from: "user1",
-    to: "user3",
-    text: "Did you complete the report?",
-    date: "2025-07-08",
-    time: "09:17",
-    isEdited: false,
-  },
-  {
-    from: "user3",
-    to: "user1",
-    text: "Yes, sent it yesterday.",
-    date: "2025-07-08",
-    time: "09:19",
-    isEdited: false,
-  }
-  ],
-  [
+    users: ['user1', 'user3'],
+    messages: [{
+      from: "user1",
+      to: "user3",
+      text: "Hello Dude whatsapp",
+      date: "2025-07-10",
+      time: "14:32",
+      isEdited: false,
+    },
     {
-    from: "user2",
-    to: "user3",
-    text: "User 1 is Useless",
-    date: "2025-07-08",
-    time: "09:17",
-    isEdited: false,
-  },
-  {
-    from: "user3",
-    to: "user2",
-    text: "Yes...",
-    date: "2025-07-08",
-    time: "09:19",
-    isEdited: false,
-  }
-  ]
+      from: "user3",
+      to: "user1",
+      text: "I’m good buddy! You?",
+      date: "2025-07-10",
+      time: "14:32",
+      isEdited: false,
+    },
+    {
+      from: "user1",
+      to: "user3",
+      text: "Same Here man... ",
+      date: "2025-07-10",
+      time: "14:33",
+      isEdited: false,
+    },
+    {
+      from: "user1",
+      to: "user3",
+      text: "Same Here man... with new message",
+      date: "2025-07-10",
+      time: "14:33",
+      isEdited: false,
+    },
+    {
+      from: "user3",
+      to: "user1",
+      text: "Some message part 1 here",
+      date: "2025-07-10",
+      time: "14:33",
+      isEdited: false,
+    },
+    {
+      from: "user1",
+      to: "user3",
+      text: "Some message 2 here",
+      date: "2025-07-10",
+      time: "14:33",
+      isEdited: false,
+    },
+    {
+      from: "user3",
+      to: "user1",
+      text: "alsdfjlaskdjflkjasdf",
+      date: "2025-07-10",
+      time: "14:34",
+      isEdited: false,
+    },
+  ]},
 ];

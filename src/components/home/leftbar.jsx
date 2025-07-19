@@ -50,8 +50,8 @@ const leftbar = () => {
   ];
 
   let addedFriends = [
-    { id: 1, profile: null, name: 'usern', lastActive: new Date(Date.now() - 1000 * 60 * 12),  isFriend:true }, // 12 min ago
-    { id: 3, profile: null, name: 'Charlie', lastActive: new Date(),  isFriend:true }, // active now
+    { id: "usern", profile: null, name: 'User Here', lastActive: new Date(Date.now() - 1000 * 60 * 12),  isFriend:true }, // 12 min ago
+    { id: "user3", profile: null, name: 'Charlie', lastActive: new Date(),  isFriend:true }, // active now
     { id: 5, profile: Profile4, name: 'Eva', lastActive: new Date(Date.now() - 1000 * 60 * 60),  isFriend:true }, // 1 hr ago
     { id: 10, profile: null, name: 'Jack', lastActive: new Date(),  isFriend:true }, // active now
     { id: 12, profile: Profile2, name: 'Leo', lastActive: new Date(Date.now() - 1000 * 60 * 5),  isFriend:true }, // 5 min ago

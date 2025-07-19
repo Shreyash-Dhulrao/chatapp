@@ -5,32 +5,21 @@ import { useState } from 'react';
 
 const Message = ({ userData }) => {
     const [isTyping, setIstyping] = useState(true);
+
     const myId = 'user1';
     const userId = 'usern';
-    const chatSend = chats.map(c => c.map((e) => {
-        if(e.from === myId){
-            return e;
-        }
-    }));
+    const chatBetweenUsers = chats.find(chat => 
+    chat.users.includes(myId) && chat.users.includes(userData.id)
+);
 
-    const chatReceive = chats.map(c => c.map((e) => {
-        if(e.from === userId){
-            return e;
-        }
-    }));
-
-
-    console.log(chatSend);
-    console.log(chatReceive);
-
-    const messages = chatSend?.messages || [];
+const messages = chatBetweenUsers?.messages || [];
 
     const allMessages = messages
-        .map(msg => ({
-            ...msg,
-            timestamp: new Date(`${msg.date} ${msg.time}`)
-        }))
-        .sort((a, b) => a.timestamp - b.timestamp);
+    .map(msg => ({
+        ...msg,
+        timestamp: new Date(`${msg.date} ${msg.time}`)
+    }))
+    .sort((a, b) => a.timestamp - b.timestamp);
     return (
         <div className='w-full p-2 flex flex-col gap-2 h-[83%] overflow-y-scroll'>
             <div className="head flex items-center justify-center top-0 sticky">
